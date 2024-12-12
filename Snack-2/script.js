@@ -61,3 +61,12 @@ console.log(teams)
 
 // LOGIC 
 
+// 4.
+
+for (let i = 0; i < teams.length; i++) {
+    teams[i]["goals"] = getRandomNumber(10, 100)
+    teams[i]["foulsSuffered"] = getRandomNumber(10, 100)
+
+    // print in console random numbers for goals and fouls suffered
+    console.log(teams[i]["goals"], teams[i]["foulsSuffered"])
+}
