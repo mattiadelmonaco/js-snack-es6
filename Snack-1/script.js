@@ -32,7 +32,18 @@ const bikes = [
     }
 ]
 
+// bikes list
 console.log(bikes)
 
 // 3. 
 
+let minWeight = bikes[0]
+
+for (let i = 0; i < bikes.length; i++) {
+    if (bikes[i]["weight"] < minWeight["weight"]) {
+        minWeight = bikes[i]
+    } 
+}
+
+// bike with minor weight
+console.log(minWeight)
