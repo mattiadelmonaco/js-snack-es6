@@ -70,3 +70,15 @@ for (let i = 0; i < teams.length; i++) {
     // print in console random numbers for goals and fouls suffered
     console.log(teams[i]["goals"], teams[i]["foulsSuffered"])
 }
+
+// 5. 
+
+let nameTeamAndFouls = []
+
+for (let i = 0; i < teams.length; i++) {
+    nameTeamAndFouls.push(teams[i]["nameTeam"])
+    nameTeamAndFouls.push(teams[i]["foulsSuffered"])
+}
+
+// print in console array with name and fouls suffered
+console.log(nameTeamAndFouls)
